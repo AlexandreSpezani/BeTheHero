@@ -40,7 +40,7 @@ export default function Incidents() {
     }
 
     useEffect(() => {
-        loadIncidents();
+        loadIncidents(); 
     }, []);
 
     return (
@@ -57,7 +57,7 @@ export default function Incidents() {
 
             <FlatList style={styles.incidentList}
                 keyExtractor={incident => String(incident.id)}
-                // showsVerticalScrollIndicator={false}
+                showsVerticalScrollIndicator={false}
                 onEndReached={loadIncidents}
                 onEndReachedThreshold={0.2}
                 data={incidents}
