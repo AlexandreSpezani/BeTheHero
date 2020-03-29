@@ -20,8 +20,8 @@ export default function Profile() {
                 Authorization: ongId
             }
         }).then(response => {
-            setIncidents(response.data)
-        })
+            setIncidents(response.data);
+        });
     }, [ongId]);
 
     async function handleDeleteIncident(id) {
